@@ -22,15 +22,12 @@ namespace Unidad_01_Introduccion_Ejercicio_09
     {
         static void Main(string[] args)
         {
-            int i;
-            int j;
-            int k = 1;
-            int e;
-
-            int flag = 0;
-            int altura;
+            int lineaActual; 
+            int asterisco; 
+            int altura; 
             int espacios;
 
+            /// VALIDAR NUMERO POSITIVO
             Console.Write("Ingresar la \"ALTURA DEL TRIANGULO\" : ");
             altura = int.Parse(Console.ReadLine());
 
@@ -39,32 +36,30 @@ namespace Unidad_01_Introduccion_Ejercicio_09
                 Console.Write("ERROR, Reingresar la \"ALTURA DEL TRIANGULO\"! : ");
                 altura = int.Parse(Console.ReadLine());
             }
+            /// FIN
 
-            espacios = altura;
-
-            for (i = 0; i < altura; i++)
+            // INICIO DEL TRIANGULO
+            for (lineaActual = 1; lineaActual <= altura; lineaActual++) 
             {
-                for (e = 0; e <= espacios; e++ )
+                // lineaActual( 1 )
+                // altura( 5 )
+                for (espacios = 0; espacios < ( altura - lineaActual )  ; espacios++)
                 {
-                    Console.Write(' ');
+                    // espacios( 0 )
+                    // altura( 5 ) - lineActual( 1 ) = 4
+                    Console.Write(" "); // espacios( 4 ) = (" ")
                 }
-                
-                espacios--;
 
-                for (j = 0; j < k; j++)
+                for (asterisco = 0; asterisco < (lineaActual * 2) - 1 ; asterisco++)
                 {
+                    // asterisco( 0 )
+                    // ( lineaActual( 1 ) * 2 =  2 ) - 1 = 1
+                    // asterisco( 1 ) = ( "*" )
                     Console.Write("*");
-
-                    if (flag == 1)
-                    {
-                        k += 2;
-                        flag = 0;
-                    }
                 }
 
-                flag = 1;
+                // salto de linea
                 Console.Write("\n");
-
             }
         }
     }
