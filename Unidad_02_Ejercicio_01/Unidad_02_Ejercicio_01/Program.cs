@@ -17,6 +17,7 @@
  
  */
 
+using Validador = Unidad_02_Ejercicio_01.Funciones; // alias
 
 namespace Unidad_02_Ejercicio_01
 {
@@ -31,7 +32,6 @@ namespace Unidad_02_Ejercicio_01
 
             for (int i = 1; i <= 10; i++)
             {
-                // bloque Pedir numero
                 Console.Write("Ingrese un número entero: ");
                 int valor = int.Parse(Console.ReadLine());
 
@@ -67,15 +67,6 @@ namespace Unidad_02_Ejercicio_01
                 Console.WriteLine("No se ingresaron números válidos.");
             }
         }
-
-        public static class Validador
-        {
-            public static bool Validar(int valor, int min, int max)
-            {
-                return valor >= min && valor <= max;
-            }
-        }
-
     }
 
 }
