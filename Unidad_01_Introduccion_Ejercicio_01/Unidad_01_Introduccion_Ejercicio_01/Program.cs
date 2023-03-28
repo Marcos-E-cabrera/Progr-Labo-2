@@ -11,6 +11,8 @@
     que pueden tener almacenado en su estructura más de un valor    
 */
 
+using System;
+
 namespace Unidad_01_Introduccion_Ejercicio_01
 {
     internal class Program
@@ -18,40 +20,49 @@ namespace Unidad_01_Introduccion_Ejercicio_01
         static void Main(string[] args)
         {
             /*  ANKI :
-                Variable escalar = unidimensional, array
-                array.Length =  Gets the total number of elements in all the dimensions of the Array.
-                Console.ReadLine() devuelve string y por eso lo PARSEO int.
+            //    Variable escalar = unidimensional, array
+            //    array.Length =  Gets the total number of elements in all the dimensions of the Array.
+            //    Console.ReadLine() devuelve string y por eso lo PARSEO int.
             */
 
-            // creamos un array de enteros
-            int[] numeros = new int[5];
-            int maximo = 0;
-            int minimo = 0;
-            float promedio;
-            int acumulador = 0;
+            int numero;
+            int valorMaximo = int.MinValue;
+            int valorMinimo = int.MaxValue;
 
-           
-            for ( int i = 0; i < numeros.Length; i++ )
+            int acumulador = 0;
+            float promedio;
+
+            for (int i = 0; i < 5; i++)
             {
                 Console.Write("Ingrese un numero: ");
-                numeros[i] = int.Parse(Console.ReadLine()); // Console.ReadLine() devuelve string y por eso lo PARSEO int.
+                numero = int.Parse(Console.ReadLine());
 
-                acumulador += numeros[i];
+                Maximo_Minimo(numero, ref valorMaximo, ref valorMinimo);
 
-                if ( i == 0 || numeros[i] > maximo)
-                {
-                    maximo = numeros[i];
-                }
-                if (i == 0 || numeros[i] < minimo)
-                {
-                    minimo = numeros[i];
-                }
+                acumulador += numero;
 
             }
 
-            promedio = (float)acumulador / numeros.Length;
+            promedio = acumulador / 5;
 
-            Console.Write("El valor Maximo {0}, El valor minimo {1} y El promedio {2}",maximo,minimo,promedio);
+            Console.WriteLine($"El valor maximo es {valorMaximo}");
+            Console.WriteLine($"El valor minimo es {valorMinimo}");
+            Console.WriteLine($"El promedio es {promedio}");
+
         }
+
+        public static void Maximo_Minimo(int num, ref int valorMaximo, ref int valorMinimo)
+        {
+            if (num > valorMaximo)
+            {
+                valorMaximo = num;
+            }
+            if (num < valorMinimo)
+            {
+                valorMinimo = num;
+            }
+        }
+
+
     }
 }

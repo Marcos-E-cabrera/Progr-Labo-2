@@ -23,25 +23,24 @@ namespace Unidad_01_Introduccion_Ejercicio_04
             int contador = 0;
             int i = 2;
 
-            Console.Write("Los primeros cuatro numeros \"PERFECTOS\" son: ");
-            Console.WriteLine("\n\n\"NUMEROS PERFECTOS\"");
+            Console.WriteLine("Los primeros cuatro numeros PERFECTOS:");
 
-            while (contador != 4) //los primeros 4 numeros
+            // - INICIO - NUMERO PERFECCTO
+            while (contador != 4) // los primeros 4 numeros
             {
                int numeroPerfecto = 0; // numero perfecto
 
                 for (int j = 1; j < i; j++) // inicia en un numero positivo
                 {
-                    if ( i % j == 0 ) // veo si el numero primo
+                    if ( IsNumeroPrimo(i,j) )
                     {
                         numeroPerfecto += j;
                     }
                 }
 
-                //SI i coincide con el numero perfecto:
+                //SI "i" coincide con el numero perfecto:
                 if (i == numeroPerfecto)
                 {
-                    //tiene que imprimir 6,28,496 y 8128
                     Console.WriteLine(i);
                     contador++;
                 }
@@ -49,8 +48,11 @@ namespace Unidad_01_Introduccion_Ejercicio_04
                 i++;
             }
 
-           Console.WriteLine("\n( ! ) PRESIONE UNA TECLA PARA FINALIZAR EL PROGRAMA.");
-           Console.ReadKey(); // espera que toques un tecla
+        }
+
+        internal static bool IsNumeroPrimo(int x, int y)
+        { 
+            return x % y == 0;
         }
     }
 }

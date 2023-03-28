@@ -25,15 +25,14 @@ namespace Unidad_01_Introduccion_Ejercicio_02
 
             while (numero < 1)
             {
-                 Console.Write("ERROR. ¡Reingresar número!: ");
-                 numero = int.Parse(Console.ReadLine());
+                Console.Write("ERROR. ¡Reingresar número!: ");
+                numero = int.Parse(Console.ReadLine());
             }
-             
-            cuadrado = (int)Math.Pow(numero,2); //Se debe de castear math.pow porque devuelve un double
+
+            cuadrado = (int)Math.Pow(numero, 2); //Se debe de castear math.pow porque devuelve un double
             cubo = (int)Math.Pow(numero, 3);
 
-            Console.Write("Numero: {0}, Cuadrado: {1}, Cubo: {2}",numero,cuadrado,cubo);
-
+            Console.WriteLine($"Numero: {numero} - Cubo: {cubo} - Cuadrado: {cuadrado}");
 
         }
     }
