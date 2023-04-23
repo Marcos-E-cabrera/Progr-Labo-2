@@ -1,4 +1,4 @@
-﻿namespace Metodos_04
+﻿namespace Metodos_U04
 {
     public class Sumador
     {
@@ -19,32 +19,30 @@
         // Metodos
         public long Sumar(long a, long b)
         {
-            cantidadSumas ++;
+            cantidadSumas++;
             return a + b;
         }
 
         public string Sumar(string a, string b)
         {
-            cantidadSumas+= 1;
+            cantidadSumas += 1;
             return $"{a} {b}";
         }
 
-        public static explicit operator int ( Sumador s )
+        public static explicit operator int(Sumador s)
         {
             return s.cantidadSumas;
         }
 
-        public static long operator + (Sumador s1, Sumador s2)
+        public static long operator +(Sumador s1, Sumador s2)
         {
             return s1.cantidadSumas + s2.cantidadSumas;
         }
-        
-        public static bool operator | (Sumador s1, Sumador s2)
+
+        public static bool operator |(Sumador s1, Sumador s2)
         {
             return s1.cantidadSumas == s2.cantidadSumas;
         }
-
-
 
     }
 }

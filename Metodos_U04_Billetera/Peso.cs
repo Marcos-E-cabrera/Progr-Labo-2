@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Billetera
+namespace Metodos_U04_Billetera
 {
     public class Peso
     {

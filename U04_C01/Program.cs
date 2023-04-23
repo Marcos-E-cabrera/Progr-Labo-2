@@ -1,7 +1,7 @@
-﻿using Metodos_04;
-using System.Globalization;
+﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/sobrecarga/Ejercicios/C01-conversor-binario-recargado/
+using Metodos_U04;
 
-namespace Unidad_04_Ejercicio_C01
+namespace U04_C01
 {
     internal class Program
     {
@@ -26,11 +26,6 @@ namespace Unidad_04_Ejercicio_C01
 
             binario = Conversor.ConvertirDecimalABinario(numeroDecimal);
             Console.WriteLine($"NumeroDecimal a NumeroBinario: {binario}");
-
-
         }
     }
 }
-       
-    
-    

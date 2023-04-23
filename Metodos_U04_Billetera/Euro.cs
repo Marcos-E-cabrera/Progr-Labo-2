@@ -1,4 +1,4 @@
-﻿namespace Billetera
+﻿namespace Metodos_U04_Billetera
 {
     public class Euro
     {

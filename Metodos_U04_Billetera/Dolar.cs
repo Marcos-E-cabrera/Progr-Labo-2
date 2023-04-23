@@ -5,7 +5,7 @@ using System.Runtime.Intrinsics.Arm;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Billetera
+namespace Metodos_U04_Billetera
 {
     public class Dolar
     {

@@ -1,7 +1,9 @@
-﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/sobrecarga/Ejercicios/I02-cotizador/
-using Billetera;
+﻿//https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/sobrecarga/Ejercicios/I02-cotizador/
+using Metodos_U04;
+using Metodos_U04_Billetera;
+using System.Drawing;
 
-namespace Unidad_04_Ejercicio_i02
+namespace U04_I02
 {
     internal class Program
     {
@@ -31,7 +33,7 @@ namespace Unidad_04_Ejercicio_i02
 
             resultadoDolar = dolarA - euroA;
             Console.WriteLine($"\nDolarA ({dolarA.GetCantidad()}) - EuroA ({euroA.GetCantidad()}) = {resultadoDolar.GetCantidad()} ");
-            
+
             resultadoDolar = dolarA - pesoA;
             Console.WriteLine($"DolarA ({dolarA.GetCantidad()}) - PesoA ({pesoA.GetCantidad()}) = {resultadoDolar.GetCantidad()} ");
 
@@ -40,7 +42,6 @@ namespace Unidad_04_Ejercicio_i02
 
             resultadoDolar = dolarA + pesoA;
             Console.WriteLine($"DolarA ({dolarA.GetCantidad()}) + PesoA ({pesoA.GetCantidad()}) = {resultadoDolar.GetCantidad()} ");
-
 
 
         }
