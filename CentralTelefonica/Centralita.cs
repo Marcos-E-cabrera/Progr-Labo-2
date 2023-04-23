@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,40 +11,83 @@ namespace CentralTelefonica
     {
         // campos
         private List<Llamada> listaDeLlamadas;
-        protected string razonSocial;
+        protected string? razonSocial;
 
         // Propiedades
-        public float GananciasPorLocal { get; }
-        public float GananciasPorProvincial { get; }
-        public float GananciasPorTotal { get; }
+        public float GananciasPorLocal { get { return CalcularGanancia(eTipoLlamada.Local); } }
+       
+        public float GananciasPorProvincial { get { return CalcularGanancia(eTipoLlamada.Provincial); } }
+        
+        public float GananciasPorTotal { get { return CalcularGanancia(eTipoLlamada.Todas); } }
+        
+        public List<Llamada> Llamadas { get { return listaDeLlamadas; } }
 
-        public List<Llamada> Llamadas { get; }
 
         // Metodos
-        private float CalcularGanancia ( TipoLlamada tipo)
-        {
-            return 0;
-        } 
-
         public Centralita ()
         {
-            this.listaDeLlamadas= new List<Llamada> ();
+            listaDeLlamadas = new List<Llamada> ();
         }
 
-        public Centralita ( string nombreEmpresa )
+        public Centralita ( string nombreEmpresa ) 
+            : this ()
         {
             this.razonSocial = nombreEmpresa;
         }
 
         public string Mostrar()
         {
-            return "";
+            StringBuilder datosLlamada = new ();
+            datosLlamada.AppendLine("--------------------------");
+            datosLlamada.AppendLine($"Razon social: {razonSocial}");
+            datosLlamada.AppendLine("Detalle de las llamadas:");
+            foreach (Llamada llamada in listaDeLlamadas)
+            {
+                if (llamada is Local llamadaLocal)
+                {
+                    datosLlamada.AppendLine($"{llamadaLocal.Mostrar()}");
+                }
+                else if ( llamada is Provincial llamadaProvincial )
+                {
+                    datosLlamada.AppendLine($"{llamadaProvincial.Mostrar()}");
+                }
+            }
+
+            return datosLlamada.ToString();
         }
 
         public void OrdenarLlamadas()
         {
-            
+            listaDeLlamadas.Sort(Llamada.OrdenarPorDuracion);
         }
-            
+
+        private float CalcularGanancia(eTipoLlamada tipo)
+        {
+            float ganancia = 0;
+
+            if ( tipo == eTipoLlamada.Local || tipo == eTipoLlamada.Todas )
+            {
+                foreach(Llamada llamada in listaDeLlamadas)
+                {
+                    if ( llamada is Local llamadaLocal) // casteo a Local
+                    {
+                        ganancia += llamadaLocal.CostoLlamada;
+                    }
+                }
+            }
+
+            if (tipo == eTipoLlamada.Provincial || tipo == eTipoLlamada.Todas)
+            {
+                foreach (Llamada llamada in listaDeLlamadas)
+                {
+                    if (llamada is Provincial llamadaProvincial)
+                    {
+                        ganancia += llamadaProvincial.CostoLlamada;
+                    }
+                }
+            }
+
+            return ganancia;
+        }
     }
 }

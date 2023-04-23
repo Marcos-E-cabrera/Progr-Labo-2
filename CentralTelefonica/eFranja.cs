@@ -1,4 +1,4 @@
-﻿enum Franja
+﻿public enum eFranja
 {
     Franja_1,
     Franja_2,
