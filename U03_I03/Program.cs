@@ -1,7 +1,7 @@
 ﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/objetos/Ejercicios/I03-el-ejemplo-universal/
-using Metodos_clase02;
+using Metodos_U03;
 
-namespace Unidad_03_Ejercicio_i03
+namespace U03_I03
 {
     internal class Program
     {
@@ -21,8 +21,6 @@ namespace Unidad_03_Ejercicio_i03
             estudiante3.SetNotaPrimerParcial(8);
             estudiante3.SetNotaSegundoParcial(7);
             Console.WriteLine(estudiante3.Mostrar());
-
-
         }
     }
 }

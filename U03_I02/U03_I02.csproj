@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Metodos_clase02\Metodos_clase02.csproj" />
+    <ProjectReference Include="..\Metodos_U03\Metodos_U03.csproj" />
   </ItemGroup>
 
 </Project>

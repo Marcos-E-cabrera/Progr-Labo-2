@@ -1,7 +1,7 @@
 ﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/objetos/Ejercicios/I04-invento-argentino/
-using Metodos_clase02;
+using Metodos_U03;
 
-namespace Unidad_03_Ejercicio_i04
+namespace U03_I04
 {
     internal class Program
     {
@@ -49,9 +49,8 @@ namespace Unidad_03_Ejercicio_i04
             Console.WriteLine($"\nEl bolígrafo azul tiene {boligrafoAzul.GetTinta()} unidades de tinta");
             Console.WriteLine($"El bolígrafo rojo tiene {boligrafoRojo.GetTinta()} unidades de tinta.");
 
-            
-            Console.ReadLine();
 
+            Console.ReadLine();
         }
     }
 }
