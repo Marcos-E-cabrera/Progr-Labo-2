@@ -1,6 +1,7 @@
-﻿using CentralTelefonica;
+﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/herencia/Ejercicios/C03-la-centralita-episodio-I/
+using Metodos_U08_CentralTelefonica;
 
-namespace Unidad_08_Ejercicio_Centralita_01
+namespace U08_Centralita_I
 {
     internal class Program
     {
@@ -11,7 +12,7 @@ namespace Unidad_08_Ejercicio_Centralita_01
 
             // Mis 4 llamadas
             Local l1 = new Local("Bernal", 30, "Rosario", 2.65f);
-            Provincial l2 = new Provincial("Morón",eFranja.Franja_1, 21, "Bernal");
+            Provincial l2 = new Provincial("Morón", eFranja.Franja_1, 21, "Bernal");
             Local l3 = new Local("Lanús", 45, "San Rafael", 1.99f);
             Provincial l4 = new Provincial(eFranja.Franja_3, l2);
 

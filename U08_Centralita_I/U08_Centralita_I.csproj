@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\HerenciaDeportiva\HerenciaDeportiva.csproj" />
+    <ProjectReference Include="..\Metodos_U08_CentralTelefonica\Metodos_U08_CentralTelefonica.csproj" />
   </ItemGroup>
 
 </Project>

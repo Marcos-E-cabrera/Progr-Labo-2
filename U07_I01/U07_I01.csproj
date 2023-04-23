@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Metodos_U07_EstadisticaDeportida\Metodos_U07_EstadisticaDeportida.csproj" />
+    <ProjectReference Include="..\Metodos_U07_Libreria\Metodos_U07_Libreria.csproj" />
+    <ProjectReference Include="..\Metodos_U07_PuestoDeAtencion\Metodos_U07_PuestoDeAtencion.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace HerenciaDeportiva
+﻿namespace Metodos_U08_HerenciaDepotiva
 {
     public class Jugador : Persona
     {

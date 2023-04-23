@@ -1,6 +1,7 @@
-﻿using HerenciaDeportiva;
+﻿//https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/herencia/Ejercicios/C01-herencia-deportiva/
+using Metodos_U08_HerenciaDepotiva;
 
-namespace Unidad_08_Ejercicio_C01
+namespace U08_C01
 {
     internal class Program
     {
@@ -15,7 +16,7 @@ namespace Unidad_08_Ejercicio_C01
             Equipo equipo1 = new Equipo(2, "River Plate");
 
             // Creamos algunos directores tecnicos
-            DirectorTecnico directorTecnico1 = new DirectorTecnico("Martín Demichelis", new DateTime (1980, 12, 20));
+            DirectorTecnico directorTecnico1 = new DirectorTecnico("Martín Demichelis", new DateTime(1980, 12, 20));
             DirectorTecnico directorTecnico2 = new DirectorTecnico("Martín Demichelis", new DateTime(1980, 12, 20));
             DirectorTecnico directorTecnico3 = new DirectorTecnico("Marcelo Gallardo", new DateTime(1976, 01, 18));
 
@@ -36,7 +37,7 @@ namespace Unidad_08_Ejercicio_C01
 
             Console.WriteLine("\n");
 
-            AnucioDirectorTecnico(directorTecnico1, equipo1,false);
+            AnucioDirectorTecnico(directorTecnico1, equipo1, false);
             AnucioDirectorTecnico(directorTecnico2, equipo1, dtAgregado2);
             AnucioDirectorTecnico(directorTecnico3, equipo1, dtAgregado3);
 
@@ -47,7 +48,7 @@ namespace Unidad_08_Ejercicio_C01
 
         }
 
-        public static void AnucioDirectorTecnico ( DirectorTecnico dt, Equipo e, bool valido )
+        public static void AnucioDirectorTecnico(DirectorTecnico dt, Equipo e, bool valido)
         {
             if (valido)
             {
@@ -59,9 +60,9 @@ namespace Unidad_08_Ejercicio_C01
             }
         }
 
-        public static void AnuncioJugador ( Jugador j, Equipo e, bool valido)
+        public static void AnuncioJugador(Jugador j, Equipo e, bool valido)
         {
-            
+
             if (valido)
             {
                 Console.WriteLine($"El jugador {j.Nombre} fue agregado al equipo {e.Nombre}.");

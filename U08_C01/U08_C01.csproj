@@ -3,13 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>Unidad_08_Ejercicio_Centralita_01</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CentralTelefonica\CentralTelefonica.csproj" />
+    <ProjectReference Include="..\Metodos_U08_HerenciaDepotiva\Metodos_U08_HerenciaDepotiva.csproj" />
   </ItemGroup>
 
 </Project>

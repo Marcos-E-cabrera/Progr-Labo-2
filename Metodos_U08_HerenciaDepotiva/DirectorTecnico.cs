@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HerenciaDeportiva
+namespace Metodos_U08_HerenciaDepotiva
 {
     public class DirectorTecnico : Persona
     {

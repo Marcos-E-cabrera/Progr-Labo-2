@@ -5,7 +5,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CentralTelefonica
+namespace Metodos_U08_CentralTelefonica
 {
     public class Centralita
     {

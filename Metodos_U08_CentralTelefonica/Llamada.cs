@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace CentralTelefonica
+namespace Metodos_U08_CentralTelefonica
 {
     public class Llamada
     {
