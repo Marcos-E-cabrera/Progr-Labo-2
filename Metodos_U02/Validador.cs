@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace Metodos
+﻿namespace Metodos_U02
 {
     public class Validador
     {
@@ -11,9 +9,8 @@ namespace Metodos
 
         public static bool ValidarRespuesta(string respuesta)
         {
-            string aux = respuesta.Trim(); // corta los esmpacios 
+            string aux = respuesta.Trim(); // corta los espacios 
             aux = aux.ToUpper();
-
             return (aux == "S");
         }
 

@@ -1,22 +1,22 @@
-﻿/*
-    Ejercicio I03 - Conversor binario
-    Consigna
-    Desarollar una clase llamada Conversor que posea dos métodos de clase (estáticos):
+﻿/*                                          Ejercicio I03 - Conversor binario
+Consigna:
+            Desarollar una clase llamada Conversor que posea dos métodos de clase (estáticos):
 
-    El método ConvertirDecimalABinario que convierte un número entero del sistema decimal al sistema binario.
+            El método ConvertirDecimalABinario que convierte un número entero del sistema decimal al sistema binario.
 
-    public string ConvertirDecimalABinario(int numeroEntero) {}
+            public string ConvertirDecimalABinario(int numeroEntero) {}
 
-    El método ConvertirBinarioADecimal que convierte un número entero del sistema binario al sistema decimal.
+            El método ConvertirBinarioADecimal que convierte un número entero del sistema binario al sistema decimal.
 
-    public int ConvertirBinarioADecimal(int numeroEntero) {}
+            public int ConvertirBinarioADecimal(int numeroEntero) {}
 
-    IMPORTANTE
-    NO utilizar los atajos del lenguaje, hacerlo mediante estructuras de iteración y selección.
+            IMPORTANTE: NO utilizar los atajos del lenguaje, hacerlo mediante estructuras de iteración y selección.
  */
-using Metodos;
 
-namespace Unidad_02_Ejercicio_03
+using Metodos_U02;
+
+
+namespace U02_I03
 {
     internal class Program
     {
@@ -40,7 +40,6 @@ namespace Unidad_02_Ejercicio_03
             numero = Conversor.ConvertirBinarioADecimal(binario);
             Console.WriteLine("Decimal: " + numero);
             // FIN - DECIMAL
-
         }
     }
 }
