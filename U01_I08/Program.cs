@@ -1,22 +1,19 @@
 ﻿/*
-        Ejercicio I08 - Dibujando un triángulo rectángulo
+                                        Ejercicio I08 - Dibujando un triángulo rectángulo
         
-        Consigna:
-        Escribir un programa que imprima por consola un triángulo como el siguiente:
-
-        *
-        ***
-        *****
-        *******
-        *********
-
-        El usuario indicará cuál será la altura del triángulo ingresando un número entero positivo. Para el ejemplo anterior, 
-        la altura ingresada fue de 5.
-
-        IMPORTANTE
-        Utilizar sentencias de iteración y selectivas.
+Consigna:
+            Escribir un programa que imprima por consola un triángulo como el siguiente:
+                                                    *
+                                                    ***
+                                                    *****
+                                                    *******
+                                                    *********
+            El usuario indicará cuál será la altura del triángulo ingresando un número entero positivo. Para el ejemplo anterior, 
+            la altura ingresada fue de 5.
+            
+            IMPORTANTE: Utilizar sentencias de iteración y selectivas.
  */
-namespace Unidad_01_Introduccion_Ejercicio_08
+namespace U01_I08
 {
     internal class Program
     {
@@ -25,7 +22,6 @@ namespace Unidad_01_Introduccion_Ejercicio_08
             int lineaActual;
             int asterisco;
             int altura;
-            int espacios;
 
             /// VALIDAR NUMERO POSITIVO
             Console.Write("Ingresar la \"ALTURA DEL TRIANGULO\" : ");

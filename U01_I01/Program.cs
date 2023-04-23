@@ -1,30 +1,16 @@
 ﻿/*
-    Ejercicio I01 - Máximo, mínimo y promedio
-    
-    CONSIGNA:
-    Ingresar 5 números por consola, guardándolos en una variable escalar. 
-    Luego calcular y mostrar: el valor máximo, el valor mínimo y el promedio.
+                                            Ejercicio I01 - Máximo, mínimo y promedio
+Consigna:
+            Ingresar 5 números por consola, guardándolos en una variable escalar. 
+            Luego calcular y mostrar: el valor máximo, el valor mínimo y el promedio.
+ */
 
-    INFORMACIÓN: 
-    Un escalar es una constante o variable que contiene un dato atómico y unidimensional. 
-    En contraposición al concepto de escalar, están los conceptos de array, lista y objeto, 
-    que pueden tener almacenado en su estructura más de un valor    
-*/
-
-using System;
-
-namespace Unidad_01_Introduccion_Ejercicio_01
+namespace U01_I01
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            /*  ANKI :
-            //    Variable escalar = unidimensional, array
-            //    array.Length =  Gets the total number of elements in all the dimensions of the Array.
-            //    Console.ReadLine() devuelve string y por eso lo PARSEO int.
-            */
-
             int numero;
             int valorMaximo = int.MinValue;
             int valorMinimo = int.MaxValue;
@@ -62,7 +48,5 @@ namespace Unidad_01_Introduccion_Ejercicio_01
                 valorMinimo = num;
             }
         }
-
-
     }
 }

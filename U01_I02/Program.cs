@@ -1,16 +1,12 @@
 ﻿/*
-    Ejercicio I02 - Error al cubo
-    
-    CONSIGNA:
-    Ingresar un número y mostrar el cuadrado y el cubo del mismo. 
-    Se debe validar que el número sea mayor que cero, caso contrario,       
-    mostrar el mensaje: "ERROR. ¡Reingresar número!".
+                                        Ejercicio I02 - Error al cubo
+Consigna:
+                Ingresar un número y mostrar el cuadrado y el cubo del mismo. Se debe validar que el número sea mayor que cero,
+                caso contrario, mostrar el mensaje: "ERROR. ¡Reingresar número!".
 
-    IMPORTANTE: 
-    Utilizar el método Pow de la clase Math para calcular las potencias.
+                IMPORTANTE: Utilizar el método Pow de la clase Math para calcular las potencias.
  */
-
-namespace Unidad_01_Introduccion_Ejercicio_02
+namespace U01_I02
 {
     internal class Program
     {
@@ -33,7 +29,6 @@ namespace Unidad_01_Introduccion_Ejercicio_02
             cubo = (int)Math.Pow(numero, 3);
 
             Console.WriteLine($"Numero: {numero} - Cubo: {cubo} - Cuadrado: {cuadrado}");
-
         }
     }
 }

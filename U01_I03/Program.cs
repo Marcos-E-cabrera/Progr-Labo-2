@@ -1,19 +1,17 @@
 ﻿/*
-    Ejercicio I03 - Los primos
+                                            Ejercicio I03 - Los primos
     
-    CONSIGNA:
-    1. Mostrar por pantalla todos los números primos que haya hasta el número que ingrese el usuario por consola.
-    2. Validar que el dato ingresado por el usuario sea un número.
-    3. Volver a pedir el dato hasta que sea válido o el usuario ingrese "salir".
-    4. Si ingresa "salir", cerrar la consola.
-    5. Al finalizar, preguntar al usuario si desea volver a operar. Si la respuesta es afirmativa, iterar. 
-    De lo contrario, cerrar la consola.
-
-    IMPORTANTE: 
-    Utilizar sentencias de iteración, selectivas y el operador módulo (%).
+CONSIGNA:
+            1. Mostrar por pantalla todos los números primos que haya hasta el número que ingrese el usuario por consola.
+            2. Validar que el dato ingresado por el usuario sea un número.
+            3. Volver a pedir el dato hasta que sea válido o el usuario ingrese "salir".
+            4. Si ingresa "salir", cerrar la consola.
+            5. Al finalizar, preguntar al usuario si desea volver a operar. Si la respuesta es afirmativa, iterar. 
+                De lo contrario, cerrar la consola.
+            
+            IMPORTANTE:     Utilizar sentencias de iteración, selectivas y el operador módulo (%).
  */
-
-namespace Unidad_01_Introduccion_Ejercicio_03
+namespace U01_I03
 {
     internal class Program
     {
@@ -49,7 +47,7 @@ namespace Unidad_01_Introduccion_Ejercicio_03
 
                 if (contador <= 2)
                 {
-                    Console.Write(" {0}",i); // 1
+                    Console.Write(" {0}", i); // 1
                 }
             }
             // - FIN -  NUMERO PRIMO
@@ -59,7 +57,7 @@ namespace Unidad_01_Introduccion_Ejercicio_03
             Console.WriteLine("\nDesea seguir interando ( s / n ):");
             input = Console.ReadLine();
 
-            while ((char.TryParse(input, out opcion) == false ) )
+            while ((char.TryParse(input, out opcion) == false))
             {
                 Console.WriteLine("ERROR, Reingresar ( s / n ):");
                 input = Console.ReadLine();
@@ -70,9 +68,6 @@ namespace Unidad_01_Introduccion_Ejercicio_03
                 Main(args);
             }
 
-            // - FIN - PREGUNTAR SI DESEA SEGUIR INTERANDO
-
-
+            // - FIN - PREGUNTAR SI DESEA SEGUIR INTERANDO        }
         }
     }
-}
