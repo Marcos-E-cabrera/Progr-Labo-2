@@ -1,4 +1,4 @@
-﻿namespace EstadisticaDeportiva
+﻿namespace Metodos_U07_EstadisticaDeportida
 {
     public class Jugador
     {   

@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Libreria\Libreria.csproj" />
+    <ProjectReference Include="..\Metodos_U07_EstadisticaDeportida\Metodos_U07_EstadisticaDeportida.csproj" />
   </ItemGroup>
 
 </Project>

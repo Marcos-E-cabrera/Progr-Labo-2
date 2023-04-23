@@ -1,18 +1,7 @@
-﻿/*
-                                                 Ejercicio C01 - Jugadores encapsulados
-Consigna:
-            Partir del ejercicio Estadística deportiva y realizar los siguientes cambios:
+﻿// https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/encapsulamiento/Ejercicios/C01-jugadores-encapsulados/
+using Metodos_U07_EstadisticaDeportida;
 
-            - Agregar propiedades de sólo lectura a los atributos partidosJugados, promedioGoles y totalGoles de Jugador, y de lectura/escritura 
-            a nombre y dni.
-            - Quitar el atributo promedioGoles de jugador. Calcular dicho promedio dentro de la propiedad de sólo lectura PromedioDeGoles.
-            - Quitar el método GetPromedioGoles, colocando dicha lógica en la respectiva propiedad.
-            - Realizar todos los cambios necesarios para que vuelva a funcionar como antes.
- */
-
-using EstadisticaDeportiva;
-
-namespace Unidad_07_Ejercicio_i03
+namespace U07_I03
 {
     internal class Program
     {
@@ -60,10 +49,6 @@ namespace Unidad_07_Ejercicio_i03
             Console.WriteLine(jugador1.MostrarDatos());
             Console.WriteLine(jugador2.MostrarDatos());
             Console.WriteLine(jugador3.MostrarDatos());
-
-
-
-
         }
     }
 }

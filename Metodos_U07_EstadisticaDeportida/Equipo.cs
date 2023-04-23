@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EstadisticaDeportiva
+namespace Metodos_U07_EstadisticaDeportida
 {
     public class Equipo
     {

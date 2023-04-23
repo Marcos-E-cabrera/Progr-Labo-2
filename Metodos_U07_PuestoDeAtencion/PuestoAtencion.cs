@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PuestoDeAtencion
+namespace Metodos_U07_PuestoDeAtencion
 {
     public class PuestoAtencion
     {

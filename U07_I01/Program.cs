@@ -1,6 +1,7 @@
-﻿using PuestoDeAtencion;
+﻿//https://codeutnfra.github.io/programacion_2_laboratorio_2_apuntes/docs/clases/encapsulamiento/Ejercicios/I01-puesto-de-atencion/
+using Metodos_U07_PuestoDeAtencion;
 
-namespace Unidad_07_Ejercicio_i01
+namespace U07_I01
 {
     internal class Program
     {
@@ -37,7 +38,6 @@ namespace Unidad_07_Ejercicio_i01
             {
                 Console.WriteLine(" - Clientes pendientes: {0}", n1.ClientesPendientes);
             }
-
         }
     }
 }

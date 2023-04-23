@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Metodos_U07_EstadisticaDeportida\Metodos_U07_EstadisticaDeportida.csproj" />
+    <ProjectReference Include="..\Metodos_U07_Libreria\Metodos_U07_Libreria.csproj" />
+    <ProjectReference Include="..\Metodos_U07_PuestoDeAtencion\Metodos_U07_PuestoDeAtencion.csproj" />
+  </ItemGroup>
+
+</Project>

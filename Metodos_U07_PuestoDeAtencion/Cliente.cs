@@ -1,4 +1,4 @@
-﻿namespace PuestoDeAtencion
+﻿namespace Metodos_U07_PuestoDeAtencion
 {
     public class Cliente
     {

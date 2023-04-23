@@ -1,4 +1,4 @@
-﻿namespace Libreria
+﻿namespace Metodos_U07_Libreria
 {
     public class Libro
     {
