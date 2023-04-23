@@ -9,10 +9,7 @@ Consigna:
             3. Por último, mostrar los negativos ordenados en forma creciente.
  
  */
-
-using System.Numerics;
-
-namespace Unidad_06_Ejercicio_i01
+namespace U06_I01
 {
     internal class Program
     {
@@ -29,7 +26,7 @@ namespace Unidad_06_Ejercicio_i01
                 int numero = random.Next(-100, 100);
                 if (vector[num] == 0)
                 {
-                   vector[num] = numero;
+                    vector[num] = numero;
                 }
             }
             ImprimirVector(vector);
@@ -68,11 +65,12 @@ namespace Unidad_06_Ejercicio_i01
         }
         static void ImprimirVector(int[] vector)
         {
-            for ( int i = 0; i < vector.Length; i++ ) 
+            for (int i = 0; i < vector.Length; i++)
             {
                 Console.Write($" {vector[i]}");
             }
             Console.WriteLine();
         }
+    }
     }
 }

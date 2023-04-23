@@ -9,10 +9,7 @@ Consigna:
             3. Por último, mostrar los negativos ordenados en forma creciente.
  
  */
-
-using System;
-
-namespace Unidad_06_Ejercicio_i02
+namespace U06_I02
 {
     internal class Program
     {
@@ -111,7 +108,7 @@ namespace Unidad_06_Ejercicio_i02
             {
                 Console.Write($" {item}");
             }
-            Console.WriteLine();            
+            Console.WriteLine();
         }
 
         static void ImprimirQueue(Queue<int> queue)
@@ -122,5 +119,6 @@ namespace Unidad_06_Ejercicio_i02
             }
             Console.WriteLine();
         }
+    }
     }
 }
