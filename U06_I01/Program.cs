@@ -72,5 +72,4 @@ namespace U06_I01
             Console.WriteLine();
         }
     }
-    }
 }
