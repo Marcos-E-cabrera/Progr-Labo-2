@@ -55,7 +55,7 @@ U06_I01 - Números locos
 U06_I02 - Números locos II
 U06_I03 - 
 U06_C01 - Estadística deportiva
-U06_C02 - 
+U06_C02 - Enciendan sus motores
 U06_C03 - 
 ---
 Encapsulamiento
@@ -67,7 +67,7 @@ U07_C01 - Jugadores encapsulados
 ---
 Herencia
 ---
-U08_I01 - 
+U08_I01 - El viajar es un placer
 U08_C01 - Herencia deportiva
-U08_C02 - 
+U08_C02 - Go Speed Racer Go!
 U08_C03 - La centralita: Episodio I
