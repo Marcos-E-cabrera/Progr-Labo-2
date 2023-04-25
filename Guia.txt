@@ -63,7 +63,6 @@ Encapsulamiento
 U07_I01 - Puesto de atención
 U07_I02 - ¿Consultaste el índice?
 U07_C01 - Jugadores encapsulados
-
 ---
 Herencia
 ---
@@ -71,3 +70,8 @@ U08_I01 - El viajar es un placer
 U08_C01 - Herencia deportiva
 U08_C02 - Go Speed Racer Go!
 U08_C03 - La centralita: Episodio I
+---
+Polimorfismo
+---
+U09_I01 - Sobre-sobrescribiendo esas advertencias
+U09_I02 - Calculadora de formas
