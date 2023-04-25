@@ -81,13 +81,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U06_C02", "..\U06_C02\U06_C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos_U06", "..\Metodos_U06\Metodos_U06.csproj", "{DC632EC8-A63C-4F74-99A2-33036870AEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U09_I01", "..\U09_I01\U09_I01.csproj", "{F1C65205-B422-416A-8557-F9FD4D6B7A8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U09_I01", "..\U09_I01\U09_I01.csproj", "{F1C65205-B422-416A-8557-F9FD4D6B7A8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodos_U09", "..\Metodos_U09\Metodos_U09.csproj", "{CB7CD83A-5CCF-45ED-B41A-A34CEAD3A339}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos_U09", "..\Metodos_U09\Metodos_U09.csproj", "{CB7CD83A-5CCF-45ED-B41A-A34CEAD3A339}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U09_I02", "..\U09_I02\U09_I02.csproj", "{27C3325D-B2CF-4A4C-8FD9-E3F48FBBA754}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U09_I02", "..\U09_I02\U09_I02.csproj", "{27C3325D-B2CF-4A4C-8FD9-E3F48FBBA754}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Metodos_U09_CalculadoraDeFormas", "..\Metodos_U09_CalculadoraDeFormas\Metodos_U09_CalculadoraDeFormas.csproj", "{B830231E-1E25-4EFC-ADB6-BBE4239F7AC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Metodos_U09_CalculadoraDeFormas", "..\Metodos_U09_CalculadoraDeFormas\Metodos_U09_CalculadoraDeFormas.csproj", "{B830231E-1E25-4EFC-ADB6-BBE4239F7AC3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U05_I01_Inicio", "..\U05_I01_Inicio\U05_I01_Inicio.csproj", "{3EFFA6D7-45A4-45A2-AF6E-616AFBBC22E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "U05_I01_Saludar", "..\U05_I01_Saludar\U05_I01_Saludar.csproj", "{6619FBF8-6E7B-4855-A4EE-3A181DCB7DF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -267,6 +271,14 @@ Global
 		{B830231E-1E25-4EFC-ADB6-BBE4239F7AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B830231E-1E25-4EFC-ADB6-BBE4239F7AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B830231E-1E25-4EFC-ADB6-BBE4239F7AC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EFFA6D7-45A4-45A2-AF6E-616AFBBC22E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFFA6D7-45A4-45A2-AF6E-616AFBBC22E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFFA6D7-45A4-45A2-AF6E-616AFBBC22E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFFA6D7-45A4-45A2-AF6E-616AFBBC22E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6619FBF8-6E7B-4855-A4EE-3A181DCB7DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6619FBF8-6E7B-4855-A4EE-3A181DCB7DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6619FBF8-6E7B-4855-A4EE-3A181DCB7DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6619FBF8-6E7B-4855-A4EE-3A181DCB7DF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
