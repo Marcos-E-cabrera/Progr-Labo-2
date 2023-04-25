@@ -33,6 +33,8 @@
             this.btn_Saludar = new System.Windows.Forms.Button();
             this.lb_Nombre = new System.Windows.Forms.Label();
             this.lb_Apellido = new System.Windows.Forms.Label();
+            this.cbx_MeteriaFavorita = new System.Windows.Forms.ComboBox();
+            this.lb_MeteriaFavorita = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txt_Nombre
@@ -52,7 +54,7 @@
             // 
             // btn_Saludar
             // 
-            this.btn_Saludar.Location = new System.Drawing.Point(341, 138);
+            this.btn_Saludar.Location = new System.Drawing.Point(341, 201);
             this.btn_Saludar.Name = "btn_Saludar";
             this.btn_Saludar.Size = new System.Drawing.Size(203, 30);
             this.btn_Saludar.TabIndex = 2;
@@ -80,11 +82,31 @@
             this.lb_Apellido.TabIndex = 4;
             this.lb_Apellido.Text = "Apellidos";
             // 
+            // cbx_MeteriaFavorita
+            // 
+            this.cbx_MeteriaFavorita.FormattingEnabled = true;
+            this.cbx_MeteriaFavorita.Location = new System.Drawing.Point(12, 140);
+            this.cbx_MeteriaFavorita.Name = "cbx_MeteriaFavorita";
+            this.cbx_MeteriaFavorita.Size = new System.Drawing.Size(532, 28);
+            this.cbx_MeteriaFavorita.TabIndex = 5;
+            // 
+            // lb_MeteriaFavorita
+            // 
+            this.lb_MeteriaFavorita.AutoSize = true;
+            this.lb_MeteriaFavorita.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lb_MeteriaFavorita.Location = new System.Drawing.Point(12, 117);
+            this.lb_MeteriaFavorita.Name = "lb_MeteriaFavorita";
+            this.lb_MeteriaFavorita.Size = new System.Drawing.Size(124, 20);
+            this.lb_MeteriaFavorita.TabIndex = 6;
+            this.lb_MeteriaFavorita.Text = "Materia Favorita";
+            // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 180);
+            this.ClientSize = new System.Drawing.Size(552, 243);
+            this.Controls.Add(this.lb_MeteriaFavorita);
+            this.Controls.Add(this.cbx_MeteriaFavorita);
             this.Controls.Add(this.lb_Apellido);
             this.Controls.Add(this.lb_Nombre);
             this.Controls.Add(this.btn_Saludar);
@@ -92,6 +114,7 @@
             this.Controls.Add(this.txt_Nombre);
             this.Name = "frmInicio";
             this.Text = "¡Hola, Windows Forms!";
+            this.Load += new System.EventHandler(this.frmInicio_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,5 +127,7 @@
         private Button btn_Saludar;
         private Label lb_Nombre;
         private Label lb_Apellido;
+        private ComboBox cbx_MeteriaFavorita;
+        private Label lb_MeteriaFavorita;
     }
 }

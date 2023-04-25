@@ -36,7 +36,7 @@
             // 
             this.lb_Saludar.AutoSize = true;
             this.lb_Saludar.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.lb_Saludar.Location = new System.Drawing.Point(257, 49);
+            this.lb_Saludar.Location = new System.Drawing.Point(13, 24);
             this.lb_Saludar.Name = "lb_Saludar";
             this.lb_Saludar.Size = new System.Drawing.Size(264, 31);
             this.lb_Saludar.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             this.lb_Saludo.AutoSize = true;
             this.lb_Saludo.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lb_Saludo.Location = new System.Drawing.Point(277, 109);
+            this.lb_Saludo.Location = new System.Drawing.Point(20, 78);
             this.lb_Saludo.Name = "lb_Saludo";
             this.lb_Saludo.Size = new System.Drawing.Size(0, 25);
             this.lb_Saludo.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 255);
+            this.ClientSize = new System.Drawing.Size(594, 173);
             this.Controls.Add(this.lb_Saludo);
             this.Controls.Add(this.lb_Saludar);
             this.Name = "frmSaludar";
